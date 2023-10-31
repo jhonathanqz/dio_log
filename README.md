@@ -24,6 +24,7 @@ Package para logar de forma simples das requisições feitas pelo pacote DIO.
 
 ```bash
 final dio = Dio();
+
 dio.interceptors.add(DioLoggerRequest())
 ```
 
