@@ -1,6 +1,6 @@
 
 
-<h1 align="center">Diolog</h1>
+<h1 align="center">Dio Logger Request</h1>
 
 <p align="center">
   <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
@@ -24,7 +24,7 @@ Package para logar de forma simples das requisições feitas pelo pacote DIO.
 
 ```bash
 final dio = Dio();
-dio.interceptors.add(DioLog())
+dio.interceptors.add(DioLoggerRequest())
 ```
 
 ## :memo: Licença ##
