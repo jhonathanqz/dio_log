@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 
-class DioLog extends Interceptor {
+class DioLoggerRequest extends Interceptor {
   @override
   Future<void> onRequest(
     RequestOptions options,

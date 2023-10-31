@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 
-import 'package:dio_log/dio_log.dart';
+import 'package:dio_logger_request/dio_logger_request.dart';
 
 void main() async {
   Dio()
-    ..interceptors.add(DioLog())
+    ..interceptors.add(DioLoggerRequest())
     ..get("http://google.com.br"); //this prints to console
 }
