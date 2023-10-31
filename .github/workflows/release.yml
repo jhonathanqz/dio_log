@@ -1,0 +1,33 @@
+name: Generate Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: Get pubspec.yaml version
+        id: get_version
+        run: echo "::set-output name=version::$(grep 'version:' pubspec.yaml | awk '{ print $2}')"
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: v${{ steps.get_version.outputs.version }}
+          release_name: Release ${{ steps.get_version.outputs.version }}
+          body: 'Version ${{ steps.get_version.outputs.version }}'
+          draft: false
+          prerelease: false
