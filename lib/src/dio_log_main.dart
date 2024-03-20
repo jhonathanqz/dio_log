@@ -68,16 +68,16 @@ class DioLoggerRequest extends Interceptor {
 
   // Green text
   void _logSuccess(String msg) {
-    log('\x1B[32m$msg\x1B[0m');
+    print('\x1B[32m$msg\x1B[0m');
   }
 
   // Red text
   void _logError(String msg) {
-    log('\x1B[31m$msg\x1B[0m');
+    print('\x1B[31m$msg\x1B[0m');
   }
 
   // Blue text
   void _logInfo(String msg) {
-    log('\x1B[34m$msg\x1B[0m');
+    print('\x1B[34m$msg\x1B[0m');
   }
 }
