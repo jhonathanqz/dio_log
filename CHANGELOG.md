@@ -1,3 +1,7 @@
+## 1.0.3
+
+- - Update method print to requests interceptor, add new properties and configure new interceptor
+
 ## 1.0.2
 
 - - Update method print to requests interceptor and add new properties
