@@ -1,6 +1,6 @@
 name: dio_logger_request
 description: Library for logging DIO package requests. Prints the request information to the console.
-version: 1.0.1
+version: 1.0.3
 homepage: https://github.com/jhonathanqz/dio_logger_response
 repository: https://github.com/jhonathanqz/dio_logger_response
 

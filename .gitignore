@@ -15,6 +15,9 @@ migrate_working_dir/
 *.ipr
 *.iws
 .idea/
+.fvm/
+.fvm/flutter_sdk
+.fvm/fvm_config.json
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
